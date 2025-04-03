@@ -1,0 +1,130 @@
+/* App.css */
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Align content to the center */
+  background-color: #A8E6CF; /* Calm, light mint green background */
+}
+
+.App {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  text-align: center; /* Center text inside the App */
+  background-color: white; /* White background for the main content */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for the card effect */
+}
+
+h1 {
+  color: #4CAF50; /* Soft green for the header text */
+  font-family: 'Arial', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Add some subtle text shadow */
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.text-list {
+  margin-top: 20px;
+}
+
+.text-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  align-items: center; /* Align items vertically in the center */
+}
+
+.text-item span {
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.text-item button {
+  background-color: #007bff;
+  margin-left: 10px;
+}
+
+.text-item button:hover {
+  background-color: #0056b3;
+}
+
+/* Remove button */
+.text-item button:last-child {
+  background-color: #ff5733;
+}
+
+.text-item button:last-child:hover {
+  background-color: #e74c3c;
+}
+
+/* Styling the dialog box */
+.dialog {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4caf50; /* Green background for success message */
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ensure it's on top of other content */
+  animation: fadeOut 2s ease-out forwards;
+}
+
+/* Fade-out animation */
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Import Button Styling */
+.import-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.import-button:hover {
+  background-color: #0056b3;
+}
